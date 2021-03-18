@@ -1,0 +1,29 @@
+:root {
+    --color-burgundy:#422924;
+    --color-burgundy-light:#865348;
+    --color-green:#5F834C;
+    --color-blue:#050C23;
+    --color-yellow:#DDC069;
+    --color-yellow-light:#e9d79e
+    --color-beige:#E5E5C7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: content-box;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Ubuntu, sans-serif;
+}

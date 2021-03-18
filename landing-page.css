@@ -1,0 +1,114 @@
+
+body {
+    position: absolute;
+    background: url(/img/products.jpg) no-repeat;
+    
+    background-size:140vw 100vh;
+    
+
+}
+
+header {
+    color: var(--color-burgundy);
+}
+
+.menu {
+    position: absolute;
+    width: 39px;
+    height: 34px;
+    left: 29px;
+    top: 77px;
+    
+}
+
+.links a span{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 40px;
+    
+}
+
+.links a span.newHere {
+    width: 200px;
+    height: 46px;
+    left: 32px;
+    top: 51px;
+}
+
+.links a span.location {
+    width: 200px;
+    height: 46px;
+    left: 197px;
+    top: 51px;
+    
+}
+
+
+.logo {
+    position: absolute;
+    width: 69px;
+    height: 69px;
+    left: 658px;
+    top: 63px;
+}
+
+.userArea .bag {
+    position: absolute;
+    width: 37px;
+    height: 35px;
+    left: 1218px;
+    top: 72px;
+}
+
+.userArea .favorites {
+    position: absolute;
+    width: 39px;
+    height: 37px;
+    left: 1278px;
+    top: 74px;
+}
+
+.userArea .userIcon {
+    position: absolute;
+    width: 37px;
+    height: 34px;
+    left: 1340px;
+    top: 72px;
+}
+
+main {
+    box-sizing: border-box;
+    padding: 480px 100px;
+}
+
+main h1.intro{
+    position: relative;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+main button.intro {
+    background: var(--color-yellow);
+    border: 3px solid var(--color-burgundy);
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 456px;
+    height: 61px;
+    left: 49px;
+    top: 500px;
+    font-size: 2rem;
+    margin-top: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+
+main button.intro:hover {
+    background: var(--color-burgundy-light);
+    color: var(--color-yellow);
+    transition-duration: 0.3s;
+}
