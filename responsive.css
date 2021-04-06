@@ -1,0 +1,126 @@
+@media (min-width:1800px){
+    .logo {
+        margin-left: 30vw;
+    }
+    .user-area {
+        margin-left: 35vw;
+    }
+}
+
+@media (max-width: 800px) {
+
+    #page-landing {
+        display: block;
+        flex-direction: column;
+        text-align: center;
+        align-items: center
+    }
+
+    .top-bar-container {
+        flex-direction: column;
+        align-items: center;
+        height: 30vh;
+    }
+
+    .logo {
+        margin-top: 4vh;
+        margin-left: 0;
+        position: absolute;
+    }
+
+    .user-area {
+        position: absolute;
+        flex-direction: column;
+        margin-top: 5vh;
+        margin-left: 80vw;
+    }
+
+    .user-area img {
+        height: 1.8rem;
+    }
+
+    .links, .slide, .intro {
+        display: none;
+    }
+    
+    .top-product-area {
+        padding-top: 4rem;
+        flex-direction: column;
+    }
+
+    .description {
+        margin-right: 2rem;
+    }
+
+    .description button {
+        align-self: center;
+    }
+
+    .social {
+        font-size: 1rem;
+    }
+
+    .institutional {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: stretch;    
+    }
+
+    .institutional p {
+        padding-bottom: 2rem;
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .social p {
+        font-size: 1.5rem;
+    }
+
+    .social button {
+        
+        width: 14rem;
+        height: 12rem;
+        background: var(--coral-light);
+        border-radius: 5rem;
+        border: solid var(--royal-light);
+        opacity: 0.8;
+        box-shadow: 0.5rem 0.5rem 3rem  var(--blue);
+    }
+
+    .social button img {
+        height: 4rem;
+        width: 4rem;
+    }
+
+    .social button span {
+        font-size: 1.5rem;
+    }
+
+    .social button:after {
+       display: none;
+    }
+
+    .social button:hover:after {
+        display: none;
+    }
+
+    .newsletter {
+        border: solid 0.1px black;
+        padding-left: 0;
+        padding-top: 0;
+        justify-content: flex-start;
+    }
+    
+    .newsletter img {
+        display: none;
+    }
+    
+    .newsletter span {
+        flex-direction: column;
+        line-height: 3rem;
+        margin-left: 5vw;
+    }
+     
+}

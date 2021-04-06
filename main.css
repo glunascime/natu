@@ -1,29 +1,37 @@
 :root {
-    --color-burgundy:#422924;
-    --color-burgundy-light:#865348;
-    --color-green:#5F834C;
-    --color-blue:#050C23;
-    --color-yellow:#DDC069;
-    --color-yellow-light:#e9d79e
-    --color-beige:#E5E5C7;
+    --royal:#198F9F;
+    --royal-light:#C9E2E5;
+    --deep-blue:#3E3C47;
+    --blue: #585564;
+    --coral:#FF895A;
+    --coral-light:#ffa988;
+    --snow:#F6F2F4;
 }
 
 * {
     margin: 0;
     padding: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 
 html {
+    margin: 0;
+    padding: 0;
     font-family: 'Josefin Sans', sans-serif;
-    box-sizing: content-box;
 }
 
-
+h1, h2, h3, h4, h5, h6 {
+    font-family: Ubuntu, sans-serif;
+}
 
 a {
     text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: Ubuntu, sans-serif;
+button {
+    outline: none;
+    cursor: pointer;
 }
