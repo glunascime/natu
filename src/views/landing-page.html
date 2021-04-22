@@ -7,9 +7,10 @@
 
         <title>Natu | Skincare consciente</title>
         <base href="/">
-        <link rel="stylesheet"  type="text/css" href="/landing-page.css">
-        <link rel="stylesheet" type="text/css" href="/responsive.css">
-        <link rel="stylesheet" type="text/css" href="/main.css">
+        <link rel="stylesheet"  type="text/css" href="/public/styles/landing-page.css">
+        <link rel="stylesheet" type="text/css" href="/public/styles/responsive.css">
+        <link rel="stylesheet" type="text/css" href="/public/styles/main.css">
+        <link rel="stylesheet" type="text/css" href="/public/styles/partials.css">
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Ubuntu&display=swap" rel="stylesheet">
@@ -22,7 +23,7 @@
             <nav>
                 <div class="top-bar-container">
 
-                    <img src="/assets/menu.svg" alt="menu" class="menu">
+                    <img src="/public/assets/menu.svg" alt="menu" class="menu">
                     <div id="menu-products" class="hide">
                         
                         <nav> 
@@ -30,6 +31,7 @@
                                 <li><a href="#">Casa e família</a></li>
                                 <li><a href="#">Cremes</a></li>
                                 <li><a href="#">Higiene bucal</a></li>
+                                <li><a href="#">Linha Capilar</a></li>
                                 <li><a href="#">Máscaras de argila</a></li>
                                 <li><a href="#">Óleos</a></li>
                                 <li><a href="#">Pets</a></li>
@@ -37,12 +39,12 @@
                             </ul>
                         </nav>
                         <button>
-                            <img src="/assets/x-mark.svg" alt="">
+                            <img src="/public/assets/x-mark.svg" alt="">
                         </button>
                     </div>
 
                     <div class="links">
-                        <a href="#">
+                        <a href="/src/views/registration.html">
                             <span></span>
                             Novo aqui?
                         </a>
@@ -52,12 +54,11 @@
                         </a>
                     </div>
     
-                    <img src="/assets/ecology.svg" alt="logo natu" class="logo">
+                    <img src="/public/assets/ecology.svg" alt="logo natu" class="logo">
     
                     <div class="user-area">
-                        <img src="/assets/shopping-bag.svg" alt="sacola" class="bag" onclick="" role="button">
-                        <img src="/assets/heart(1).svg" alt="favoritos" class="favorites" onclick="" role="button">
-                        <img src="/assets/user.svg" alt="usuário" class="userIcon" onclick="" role="button">
+                        <img src="/public/assets/shopping-bag.svg" alt="sacola" class="bag" onclick="" role="button">
+                        <img src="/public/assets/user.svg" alt="usuário" class="userIcon" onclick="" role="button">
                     </div>
     
                 </div>
@@ -67,10 +68,10 @@
         <main>
             <div class="cover">
                 <div class="slide">
-                    <img src="/img/handbars.jpg" alt="" class="pic">
-                    <img src="/img/cover.jpg" alt="" class="pic">
-                    <img src="/img/cover2.jpg" alt="" class="pic">
-                    <img src="/img/zerowaste.jpg" alt="" class="pic">
+                    <img src="/public/img/handbars.jpg" alt="" class="pic">
+                    <img src="/public/img/cover.jpg" alt="" class="pic">
+                    <img src="/public/img/cover2.jpg" alt="" class="pic">
+                    <img src="/public/img/zerowaste.jpg" alt="" class="pic">
                 </div>
     
                 <div class="intro">
@@ -100,19 +101,19 @@
 
                 <div class="best-sellers">
                     <div class="item">
-                        <img src="/img/shampoo.svg" alt="shampoo sólido fresh">
+                        <img src="/public/img/shampoo.svg" alt="shampoo sólido fresh">
                         <h4>Shampoo Sólido Fresh</h4>
                         <p>R$ 30</p>
                     </div>
 
                     <div class="item">
-                        <img src="/img/escova.svg" alt="escova de bambu">
+                        <img src="/public/img/escova.svg" alt="escova de bambu">
                         <h4>Escova de bambu</h4>
                         <p>R$ 18</p>
                     </div>
 
                     <div class="item">
-                        <img src="/img/kit-solido.svg" alt="kit sólido Pitaya">
+                        <img src="/public/img/kit-solido.svg" alt="kit sólido Pitaya">
                         <h4>Kit Sólido Pitaya</h4>
                         <p>R$ 55</p>
                     </div>
@@ -125,7 +126,7 @@
                     escolhas importam? </p>
                 <button>
                     <span>
-                        <img src="/assets/instagram-logo.svg" alt="logo do instagram">
+                        <img src="/public/assets/instagram-logo.svg" alt="logo do instagram">
                     </span> 
                     <span> Insta da @Natu</span>
                 </button>
@@ -135,7 +136,7 @@
         <footer>
             <div class="newsletter">
                 <span>
-                    <img src="/assets/ecology-royal.svg" alt="logo da Natu">
+                    <img src="/public/assets/ecology-royal.svg" alt="logo da Natu">
                     <p>Sem spam, só amor! Vem cá...</p>
                     <input type="email" placeholder="Email">
                 </span>
@@ -178,7 +179,7 @@
         
     </div>
 
-    <script src="menu.js"></script>
+    <script src="/public/scripts/menu.js"></script>
     </body>
 </html>
 

@@ -15,83 +15,29 @@ body {
     background: var(--royal);
     height: 20vh;
     display: flex;
-    
     align-items: baseline;
     
 }
 
-
-.menu {
-    position: absolute;
-    width: 2.4rem;
-    height: 2.1rem;
-    left: 1vw;
-    right: 2vw;
-    top: 8vh;
-    background: none;
-    border: 0;
-    cursor: pointer;
-}
-
-#menu-products {
-  position: absolute;
-  background: var(--royal);
-  display: flex;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
-  padding-right: 5rem;
-  font-size: 1.1rem;
-  line-height: 2rem;
-  z-index: 1;
-  transition: 400ms;
-}
-
-#menu-products.hide {
-  display: none;
-}
-
-#menu-products button {
-  background: none;
-  border: 0 var(--coral);
-  border-radius: 1rem;
-  height: 2rem;
-  width: 2rem;
-  margin-left: 3rem;
-  cursor: pointer;
-}
-
-#menu-products button:hover {
-  transition: 1s ease-in-out;
-  background: var(--royal);
-  opacity: 0.2;
-  border-radius: 100%;
-  border: solid var(--coral);
-}
-
-#menu-products button img {
-  height: 1.3rem; 
-  width: 1.3rem;
+.logo {
+  margin-left: 25vw;  
   align-self: center;
-}
-
-#menu-products a {
-  color: var(--snow);
-  text-decoration: none;
-  display: flex;
-  justify-content: flex-end;
+  width: 5rem;
+  height: 6rem;
   
 }
 
-#menu-products a:hover {
-  color: var(--coral-light);
-  transition: 1s ease-in-out;
-  font-size: calc(80% + 0.5rem);
+.user-area {
+  margin-left: 36vw;
+  margin-top: 7vh;
+  display: flex;
+  height: 2rem;
+  gap: 1rem;
 }
 
-#menu-products li {
-  list-style: none;
-  margin-left: 2vw;
-  margin-top: 2vh;
+.user-area img {
+  cursor: pointer;
+  height: 2rem;
 }
 
 .links {
@@ -114,30 +60,6 @@ body {
   transition: 0.5s ease-in-out;
   font-size: calc(70% + 0.5rem);
   color: var(--coral);
-}
-
-
-.logo {
-    margin-left: 25vw;  
-    align-self: center;
-    width: 5rem;
-    height: 6rem;
-    
-}
-
-.user-area {
-    margin-left: 30vw;
-    margin-top: 7vh;
-    display: flex;
-    width: 2.5rem;
-    height: 2rem;
-    gap: 1rem;
-    
-}
-
-.user-area img  {
-    justify-content: space-between;
-    cursor: pointer;
 }
 
 .slide {

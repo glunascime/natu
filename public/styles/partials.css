@@ -1,0 +1,187 @@
+.general-top-bar {
+  background: var(--royal);
+  height: 20vh;
+  display: flex;
+  align-items: baseline;
+}
+
+.menu {
+    position: absolute;
+    width: 2.4rem;
+    height: 2.1rem;
+    left: 1vw;
+    right: 2vw;
+    top: 8vh;
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+
+#menu-products {
+    position: absolute;
+    background: var(--royal);
+    display: flex;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-right: 7rem;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    z-index: 1;
+    transition: 400ms;
+  }
+  
+  #menu-products.hide {
+    display: none;
+  }
+  
+  #menu-products button {
+    background: none;
+    border: 0 var(--coral);
+    border-radius: 1rem;
+    height: 2rem;
+    width: 2rem;
+    margin-left: 3rem;
+    cursor: pointer;
+  }
+
+  #menu-products button:hover {
+    transition: 1s ease-in-out;
+    background: var(--royal);
+    opacity: 0.2;
+    border-radius: 100%;
+    border: solid var(--coral);
+  }
+  
+  #menu-products button img {
+    height: 1.3rem; 
+    width: 1.3rem;
+    align-self: center;
+  }
+  
+  #menu-products a {
+    color: var(--snow);
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  #menu-products a:hover {
+    color: var(--coral-light);
+    transition: 1s ease-in-out;
+    font-size: calc(80% + 0.5rem);
+  }
+  
+  #menu-products li {
+    list-style: none;
+    margin-left: 2vw;
+    margin-top: 2vh;
+  }
+
+ .general-logo {
+   margin-left: 47vw;
+   align-self: center;
+   width: 5rem;
+   height: 6rem;
+ }
+ 
+ .general-user-area {
+   position: absolute;
+   margin-left: 90vw;
+   margin-top: 6.4vh;
+   display: flex; 
+   gap: 1rem;
+ }
+
+.general-user-area img {
+  cursor: pointer;
+  height: 2rem;
+}
+
+footer {
+    background: linear-gradient(180deg, var(--snow) 0%, var(--coral-light) 100%);
+  }
+  
+  .newsletter {
+    display: flex;
+    padding-left: 8vw;
+    padding-top: 10vh;
+  }
+  
+  .newsletter img {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+  
+  .newsletter span {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    color: var(--royal);
+  }
+  
+  .newsletter input {
+    background: none;
+    padding-left: 2vw;
+    margin-left: 2vw;
+    border: 0;
+    outline: none;
+    border-bottom: solid 1px var(--royal) ;
+  }
+  
+  .newsletter input::placeholder {
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--royal);
+    opacity: 0.5;
+  }
+  
+  .institutional {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    align-self: center;
+    padding: 20vh 10vw;
+    font-size: 1.2rem;
+  }
+  
+  .institutional h5 {
+    color: var(--royal);
+    line-height: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .institutional p {
+    color: var(--deep-blue);
+    opacity: 0.8;
+    font-weight: lighter;
+    line-height: 1.5rem;
+  }
+
+  .base-button {
+    background: var(--royal);
+    border: 0;
+    height: 2.8rem;
+    width: 15rem;
+    border-radius: 2rem;
+    color: var(--snow);
+    font-size: 1.5rem;
+    font-family: Ubuntu, sans-serif;
+  }
+
+  .base-button:hover {
+    background: var(--snow);
+    border: solid var(--royal-light) 3px;
+    color: var(--royal);
+    transition: 600ms ease-in-out;
+  }
+
+  .base-button:active {
+    content: "";
+    background: var(--royal);
+    color: var(--deep-blue);
+    opacity: 0.8;
+    transition: all 200ms
+  }
