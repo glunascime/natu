@@ -1,0 +1,64 @@
+.product-header {
+    display: flex;
+    flex-direction: column;
+    background: url(/public/img/zerowaste2.png);
+    background-size: cover;
+    height: 45vh;
+    text-align: center;
+}
+
+.product-header h1 {
+    color: var(--coral);
+    font-size: 4rem;
+    align-self: center;
+    margin-top: 10vh;
+}
+
+.product-header p {
+    align-self: center;
+    font-size: 1.5rem;
+    color: var(--blue);
+    margin-top: 3vh;
+}
+
+.products {
+    display: grid;
+    align-items: center;
+    grid-template-columns:repeat(auto-fill, minmax(20rem, 1fr));
+    gap: 1rem;
+    row-gap: 8rem;
+    margin: 10vh 10vw;
+    
+    
+}
+
+.products li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+   
+}
+
+.products img {
+    height: 30vh;
+}
+
+.products h3 {
+    color: var(--blue);
+    margin-top: 1vh;
+}
+
+.products p {
+    color: var(--blue);
+    font-size: 1.2rem;
+    line-height: 3rem;
+    margin-bottom: 2vh;
+}
+
+.products button {
+    width: 10rem;
+    height: 2.5rem;
+}

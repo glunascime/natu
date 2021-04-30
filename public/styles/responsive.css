@@ -35,7 +35,7 @@
     }
 
     .user-area img {
-        height: 1.8rem;
+        height: 1.5rem;
     }
 
     .general-user-area {
@@ -93,7 +93,6 @@
         margin-top: 4vh;
     }
      .general-user-area {
-         /* justify-content: top; */
          height: 2rem;
          margin-top: 6vh;
          margin-right: 2vh;
@@ -160,7 +159,6 @@
     .password-input {
         flex-direction: column;
         justify-content: center;
-        /* border: solid 0.1px yellow ; */
     }
 
     .password-input div {

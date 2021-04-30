@@ -5,18 +5,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="/">
 
-        <title>Natu | Cadastro</title>
+        <title>Natu | Linha Capilar</title>
         <base href="/">
         <link rel="stylesheet" type="text/css" href="/public/styles/responsive.css">
         <link rel="stylesheet" type="text/css" href="/public/styles/main.css">
         <link rel="stylesheet" type="text/css" href="/public/styles/account.css">
         <link rel="stylesheet" type="text/css" href="/public/styles/partials.css">
+        <link rel="stylesheet" type="text/css" href="/public/styles/products.css">
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Ubuntu&display=swap" rel="stylesheet">
 
     </head>
-    
+
     <body>
         <div id="container">
             <header>
@@ -47,18 +48,18 @@
     
                         <div class="general-user-area">
                             <img 
-                            src= "/public/assets/shopping-bag.svg" 
-                            alt= "sacola" 
-                            id= "bag" 
-                            role= "button" 
-                            onclick= ""
+                            src="/public/assets/shopping-bag.svg" 
+                            alt="sacola" 
+                            id="bag" 
+                            role="button"
+                            onclick=""
                             >
                             <img 
-                            src= "/public/assets/user.svg" 
-                            alt= "usuário" 
-                            id= "user-icon" 
-                            role= "button" 
-                            onclick= "redirect(accountAccess)"
+                            src="/public/assets/user.svg"
+                            alt="usuário" 
+                            id="user-icon" 
+                            role="button"
+                            onclick="redirect(accountAccess)" 
                             >
                         </div>
                     </div>
@@ -66,47 +67,83 @@
             </header>
 
             <main>
+                <div class="product-header">
+                    <h1>Linha Capilar</h1>
+                    <p>Shampoos, condicionadores e kits de sólidos</p>
+                </div>
                 <a class="home" href="/src/views/landing-page.html">
                     <img src="/public/assets/left-arrow.svg" alt="voltar">
                     <span> Voltar</span>
                 </a>
 
-                <div class="input-header">
-                    <h1>
-                        Oi! Tem muita coisa boa te 
-                        <br>esperando :)
-                    </h1>
-                    <p>
-                        Cadastre-se para fazer suas compras e receber novidades
-                    </p>
-                </div>
-               <form action="" id="new-client" method="POST">
-                <fieldset>
-                    <div class="client-input">
-                        <label for="name">Nome</label>
-                        <input name="name" type="text" required>
-                    </div>
-                    <div class="client-input">
-                        <label for="email">Email</label>
-                        <input name="email" type="text" required>
-                    </div>
-                    <div class="password-input">
-                        <div>
-                            <label for="password">Senha</label>
-                            <input name="password" type="password">
-                        </div>
-                        <div>
-                            <label for="password">Confirme a senha</label>
-                            <input name="confirm-password" type="password">
-                        </div>
-                    </div>
-                    <div class="create-account">
-                        <button class="base-button">Criar conta</button>
-                    </div>
-                </fieldset>
-               </form>
-            </main>
+                <div class="products">
+                    <li data-id="Shampoo fresh">
+                        <img src="/public/img/fresh-shampoo.svg" alt="barra de shampoo fresh">
+                        <h3>Shampoo Sólido Fresh</h3> 
+                        <p>R$30</p>
+                        <button class="base-button" onclick="">
+                            Comprar
+                        </button>
+                    </li>
 
+                    <li data-id="Kit sólidos pitaya">
+                        <img src="/public/img/kit-solido.svg" alt="barra de shampoo e condicionador pitaya">
+                        <h3>Kit Sólidos Pitaya</h3> 
+                        <p>R$55</p>
+                        <button class="base-button" onclick="">
+                            Comprar
+                        </button>
+                    </li>
+
+                    <li data-id="Kit sólidos oceane">
+                        <img src="/public/img/duobar.svg" alt="barra de shampoo e condicionador oceane">
+                        <h3>Kit Sólidos Oceane</h3> 
+                        <p>R$55</p>
+                        <button class="base-button" onclick="">
+                            Comprar
+                        </button>
+                    </li>
+
+                    <li data-id="Barra oliva">
+                        <img src="/public/img/oliva.svg" alt="barra 2 em 1 oliva">
+                        <h3>Barra Oliva (2x1)</h3> 
+                        <p>R$35</p>
+                        <button class="base-button" onclick="">
+                            Comprar
+                        </button>
+                    </li>
+
+                    <li data-id="Shampoo berry">
+                        <img src="/public/img/berry.svg" alt="barra de shampoo berry">
+                        <h3>Shampoo Sólido Berry</h3> 
+                        <p>R$30</p>
+                        <button class="base-button" onclick="">
+                            Comprar
+                        </button>
+                    </li>
+
+                    <li data-id="Condicionador fresh">
+                        <img src="/public/img/fresh.svg" alt="barra de condicionador fresh">
+                        <h3>Condicionador Fresh</h3> 
+                        <p>R$40</p>
+                        <button class="base-button" onclick="">
+                            Comprar
+                        </button>
+                    </li>
+
+                    <li data-id="Barra rose">
+                        <img src="/public/img/rose.svg" alt="barra 2 em 1 rose">
+                        <h3>Barra Rose (2x1)</h3> 
+                        <p>R$30</p>
+                        <button class="base-button" onclick="">
+                            Comprar
+                        </button>
+                    </li>
+                </div>
+                
+
+                
+            </main>
             <footer>
                 <div class="newsletter">
                     <span>

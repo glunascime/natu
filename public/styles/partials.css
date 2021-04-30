@@ -78,7 +78,7 @@
   }
 
  .general-logo {
-   margin-left: 47vw;
+   margin-left: 46vw;
    align-self: center;
    width: 5rem;
    height: 6rem;
@@ -95,6 +95,24 @@
 .general-user-area img {
   cursor: pointer;
   height: 2rem;
+}
+
+.home {
+  display: flex;
+  margin-top: 2vh;
+  margin-left: 2vw;
+  width: fit-content;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.2rem;
+  color: var(--royal);
+}
+
+.home img {
+  height: 3vh;
+}
+
+.home span {
+  padding-top: 0.2rem;
 }
 
 footer {

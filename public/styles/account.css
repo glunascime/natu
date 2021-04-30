@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     line-height: 3rem;
-    padding-top: 4rem;
+    padding-top: 2rem;
 }
 
 .input-header h1 {
@@ -15,10 +15,14 @@
 }
 
 .input-header p {
+    text-align: center;
     color: var(--blue);
     opacity: 0.6;
+    line-height: 1.5rem;
     font-size: 1.2rem;
-    padding-top: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    width: 70vw;
 }
 
 form {
@@ -48,7 +52,7 @@ input {
 
 fieldset {
     border: none;
-    max-width: 30vw;
+    width: 30vw;
 }
 
 .client-input {
@@ -64,12 +68,49 @@ fieldset {
     line-height: 2rem;
 }
 
-.password-input div {
-    padding-left: 0.2rem;
+#client-access .client-input input{
+    margin-bottom: 1rem;
 }
 
-.create-account {
+::placeholder {
+    color: var(--blue);
+    opacity: 0.5;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.create-account,
+.access-account {
     display: flex;
     justify-content: center;
     margin-top: 2rem;
 }
+
+.password-recovery {
+    margin-left: 1rem;
+    margin-top: -1rem;
+
+}
+
+.password-recovery a {
+    color: var(--coral-light);
+    font-size: 0.8rem;
+}
+
+.redirect {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    color: var(--blue);
+    opacity: 0.8;
+    margin-top: -1rem;
+}
+
+.redirect a {
+    color: var(--deep-blue);
+}
+
+ a:hover {
+    font-weight: bold;
+    transition: 200ms ease-in;
+}
+

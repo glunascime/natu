@@ -39,7 +39,7 @@
                             </ul>
                         </nav>
                         <button>
-                            <img src="/public/assets/x-mark.svg" alt="">
+                            <img src="/public/assets/x-mark.svg" alt="fechar">
                         </button>
                     </div>
 
@@ -57,8 +57,19 @@
                     <img src="/public/assets/ecology.svg" alt="logo natu" class="logo">
     
                     <div class="user-area">
-                        <img src="/public/assets/shopping-bag.svg" alt="sacola" class="bag" onclick="" role="button">
-                        <img src="/public/assets/user.svg" alt="usuário" class="userIcon" onclick="" role="button">
+                        <img 
+                        src="/public/assets/shopping-bag.svg" 
+                        alt="sacola" 
+                        class="bag" 
+                        role="button"
+                        >
+                        <img 
+                        src="/public/assets/user.svg" 
+                        alt="usuário" 
+                        id="user-icon" 
+                        onclick="redirect(accountAccess)" 
+                        role="button"
+                        >
                     </div>
     
                 </div>
@@ -180,6 +191,7 @@
     </div>
 
     <script src="/public/scripts/menu.js"></script>
+    <script src="/public/scripts/pages.js"></script>
     </body>
 </html>
 

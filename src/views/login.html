@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="/">
 
-        <title>Natu | Cadastro</title>
+        <title>Natu | Login</title>
         <base href="/">
         <link rel="stylesheet" type="text/css" href="/public/styles/responsive.css">
         <link rel="stylesheet" type="text/css" href="/public/styles/main.css">
@@ -16,7 +16,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Ubuntu&display=swap" rel="stylesheet">
 
     </head>
-    
+
     <body>
         <div id="container">
             <header>
@@ -47,18 +47,18 @@
     
                         <div class="general-user-area">
                             <img 
-                            src= "/public/assets/shopping-bag.svg" 
-                            alt= "sacola" 
-                            id= "bag" 
-                            role= "button" 
-                            onclick= ""
+                            src="/public/assets/shopping-bag.svg" 
+                            alt="sacola" 
+                            id="bag" 
+                            role="button"
+                            onclick=""
                             >
                             <img 
-                            src= "/public/assets/user.svg" 
-                            alt= "usuário" 
-                            id= "user-icon" 
-                            role= "button" 
-                            onclick= "redirect(accountAccess)"
+                            src="/public/assets/user.svg"
+                            alt="usuário" 
+                            id="user-icon" 
+                            role="button"
+                            onclick="redirect(accountAccess)" 
                             >
                         </div>
                     </div>
@@ -67,44 +67,41 @@
 
             <main>
                 <a class="home" href="/src/views/landing-page.html">
-                    <img src="/public/assets/left-arrow.svg" alt="voltar">
+                    <img src="/public/assets/left-arrow.svg" alt="">
                     <span> Voltar</span>
                 </a>
 
                 <div class="input-header">
                     <h1>
-                        Oi! Tem muita coisa boa te 
-                        <br>esperando :)
+                        Que bom te ver aqui! :)
                     </h1>
                     <p>
-                        Cadastre-se para fazer suas compras e receber novidades
+                        Digite seu e-mail e senha para acessar sua conta
                     </p>
                 </div>
-               <form action="" id="new-client" method="POST">
+               <form action="" id="client-access" method="GET">
                 <fieldset>
                     <div class="client-input">
-                        <label for="name">Nome</label>
-                        <input name="name" type="text" required>
+                        <input name="email" type="text" placeholder="E-mail" required>
+                        <input name="password" type="password" placeholder="Senha">
                     </div>
-                    <div class="client-input">
-                        <label for="email">Email</label>
-                        <input name="email" type="text" required>
+
+                    <div class="password-recovery">
+                        <a href="/">Esqueceu sua senha?</a>
                     </div>
-                    <div class="password-input">
-                        <div>
-                            <label for="password">Senha</label>
-                            <input name="password" type="password">
-                        </div>
-                        <div>
-                            <label for="password">Confirme a senha</label>
-                            <input name="confirm-password" type="password">
-                        </div>
-                    </div>
-                    <div class="create-account">
-                        <button class="base-button">Criar conta</button>
+        
+                    <div class="access-account">
+                        <button class="base-button">Entrar</button>
                     </div>
                 </fieldset>
                </form>
+
+               <div class="redirect">
+                   <span>Novo aqui?</span>
+                   <a href="/src/views/registration.html">
+                    Partiu, cadastro!
+                    </a>
+               </div>
             </main>
 
             <footer>
