@@ -1,3 +1,7 @@
+.hide {
+  display: none;
+}
+
 .general-top-bar {
   background: var(--royal);
   height: 20vh;
@@ -86,15 +90,24 @@
  
  .general-user-area {
    position: absolute;
-   margin-left: 90vw;
+   margin-left: 88vw;
    margin-top: 6.4vh;
    display: flex; 
-   gap: 1rem;
+   gap: 0.5rem;
  }
 
 .general-user-area img {
   cursor: pointer;
   height: 2rem;
+ 
+}
+
+.general-user-area span {
+  color: var(--snow);
+  
+  
+  
+
 }
 
 .home {

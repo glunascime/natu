@@ -40,13 +40,13 @@
 
     .general-user-area {
         flex-direction: column;
-        
     }
 
     .general-user-area img {
         height: 4rem;
-        
+
     }
+
     .links, .slide, .intro {
         display: none;
     }
@@ -92,12 +92,12 @@
         margin-right: 44vw;
         margin-top: 4vh;
     }
-     .general-user-area {
+    
+    .general-user-area {
          height: 2rem;
-         margin-top: 6vh;
          margin-right: 2vh;
          
-     }
+    }
 
     .social p {
         font-size: 1.5rem;

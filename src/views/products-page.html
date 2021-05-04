@@ -32,7 +32,7 @@
                                     <li><a href="#">Casa e família</a></li>
                                     <li><a href="#">Cremes</a></li>
                                     <li><a href="#">Higiene bucal</a></li>
-                                    <li><a href="#">Linha Capilar</a></li>
+                                    <li><a href="/src/views/products-page.html">Linha Capilar</a></li>
                                     <li><a href="#">Máscaras de argila</a></li>
                                     <li><a href="#">Óleos</a></li>
                                     <li><a href="#">Pets</a></li>
@@ -47,13 +47,18 @@
                         <img src="/public/assets/ecology.svg" alt="logo natu" class="general-logo">
     
                         <div class="general-user-area">
+                            <div class="added">
+                            <span id="itemCounter"></span>
+                            <img id="fullBag" src="/public/assets/shopping-bag.svg" class="hide" alt="">
+                            </div> 
                             <img 
-                            src="/public/assets/shopping-bag.svg" 
+                            src="/public/assets/bag.svg" 
                             alt="sacola" 
-                            id="bag" 
+                            id="emptyBag" 
                             role="button"
-                            onclick=""
-                            >
+                            onclick =""
+                            > 
+
                             <img 
                             src="/public/assets/user.svg"
                             alt="usuário" 
@@ -77,70 +82,83 @@
                 </a>
 
                 <div class="products">
-                    <li data-id="Shampoo fresh">
-                        <img src="/public/img/fresh-shampoo.svg" alt="barra de shampoo fresh">
-                        <h3>Shampoo Sólido Fresh</h3> 
-                        <p>R$30</p>
-                        <button class="base-button" onclick="">
+                    <li>
+                        <a href="/">
+                            <img src="/public/img/fresh-shampoo.svg" alt="barra de shampoo fresh">
+                            <h3 id="shampooFreshName">Shampoo Sólido Fresh</h3>
+                            <p id="shampooFreshPrice">R$30</p>
+                        </a>
+                        <button id="shampooFresh" class="base-button" onclick="addToCart(this)">
                             Comprar
                         </button>
                     </li>
 
-                    <li data-id="Kit sólidos pitaya">
-                        <img src="/public/img/kit-solido.svg" alt="barra de shampoo e condicionador pitaya">
-                        <h3>Kit Sólidos Pitaya</h3> 
-                        <p>R$55</p>
-                        <button class="base-button" onclick="">
+                    <li>
+                        <a href="">
+                            <img src="/public/img/kit-solido.svg" alt="barra de shampoo e condicionador pitaya">
+                            <h3 id="kitPitayaName">Kit Sólidos Pitaya</h3> 
+                            <p id="kitPitayaPrice">R$55</p>
+                        </a>
+                        <button id="kitPitaya" class="base-button" onclick="addToCart(this)">
                             Comprar
                         </button>
                     </li>
 
-                    <li data-id="Kit sólidos oceane">
-                        <img src="/public/img/duobar.svg" alt="barra de shampoo e condicionador oceane">
-                        <h3>Kit Sólidos Oceane</h3> 
-                        <p>R$55</p>
-                        <button class="base-button" onclick="">
+                    <li>
+                        <a href="">
+                            <img src="/public/img/duobar.svg" alt="barra de shampoo e condicionador oceane">
+                            <h3 id="kitOceaneName">Kit Sólidos Oceane</h3> 
+                            <p id="kitOceanePrice">R$55</p>
+                        </a>
+                        <button id="kitOceane" class="base-button" onclick="addToCart(this)">
                             Comprar
                         </button>
                     </li>
 
-                    <li data-id="Barra oliva">
-                        <img src="/public/img/oliva.svg" alt="barra 2 em 1 oliva">
-                        <h3>Barra Oliva (2x1)</h3> 
-                        <p>R$35</p>
-                        <button class="base-button" onclick="">
+                    <li>
+                        <a href="">
+                            <img src="/public/img/oliva.svg" alt="barra 2 em 1 oliva">
+                            <h3 id="barOlivaName">Barra Oliva (2x1)</h3> 
+                            <p id="barOlivaPrice">R$35</p>
+                        </a>
+                        <button id="barOliva" class="base-button" onclick="addToCart(this)">
                             Comprar
                         </button>
                     </li>
 
-                    <li data-id="Shampoo berry">
-                        <img src="/public/img/berry.svg" alt="barra de shampoo berry">
-                        <h3>Shampoo Sólido Berry</h3> 
-                        <p>R$30</p>
-                        <button class="base-button" onclick="">
+                    <li>
+                        <a href="">
+                            <img src="/public/img/berry.svg" alt="barra de shampoo berry">
+                            <h3 id="shampooBerryName">Shampoo Sólido Berry</h3> 
+                            <p id="shampooBerryPrice">R$30</p>
+                        </a>
+                        <button id="shampooBerry" class="base-button" onclick="addToCart(this)">
                             Comprar
                         </button>
                     </li>
 
-                    <li data-id="Condicionador fresh">
-                        <img src="/public/img/fresh.svg" alt="barra de condicionador fresh">
-                        <h3>Condicionador Fresh</h3> 
-                        <p>R$40</p>
-                        <button class="base-button" onclick="">
+                    <li>
+                        <a href="">
+                            <img src="/public/img/fresh.svg" alt="barra de condicionador fresh">
+                            <h3 id="conditionerFreshName">Condicionador Fresh</h3> 
+                            <p id="conditionerFreshPrice">R$40</p>
+                        </a>
+                        <button id="conditionerFresh" class="base-button" onclick="addToCart(this)">
                             Comprar
                         </button>
                     </li>
 
-                    <li data-id="Barra rose">
-                        <img src="/public/img/rose.svg" alt="barra 2 em 1 rose">
-                        <h3>Barra Rose (2x1)</h3> 
-                        <p>R$30</p>
-                        <button class="base-button" onclick="">
+                    <li>
+                        <a href="">
+                            <img src="/public/img/rose.svg" alt="barra 2 em 1 rose">
+                            <h3 id="barRoseName">Barra Rose (2x1)</h3> 
+                            <p id="barRosePrice">R$30</p>
+                        </a>
+                        <button id="barRose" class="base-button" onclick="addToCart(this)">
                             Comprar
                         </button>
                     </li>
                 </div>
-                
 
                 
             </main>
@@ -190,6 +208,7 @@
             
         </div>
     
+        <script src="/public/scripts/cart.js"></script>
         <script src="/public/scripts/menu.js"></script>
         <script src="/public/scripts/pages.js"></script>
         </div>

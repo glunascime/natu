@@ -27,9 +27,7 @@
     grid-template-columns:repeat(auto-fill, minmax(20rem, 1fr));
     gap: 1rem;
     row-gap: 8rem;
-    margin: 10vh 10vw;
-    
-    
+    margin: 10vh 10vw;  
 }
 
 .products li {
@@ -39,7 +37,15 @@
     align-items: center;
     justify-content: space-between;
     text-align: center;
-   
+    border-radius: 1.4rem;
+
+}
+
+.products a:hover {
+    background: linear-gradient(var(--coral-light) 0%, var(--royal-light) 50%, var(--snow) 100%);
+    transition: ease 800ms;
+    padding: 1rem;
+    border-radius: 1.2rem;
 }
 
 .products img {
