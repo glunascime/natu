@@ -11,7 +11,8 @@ function addToCart(shopButton) {
 
     cartItems.push(product);
     document.getElementById("itemCounter").innerHTML = cartItems.length;
-
+     
+ 
     let emptyBag = document.getElementById("emptyBag");
     let fullBag = document.getElementById("fullBag");
 
@@ -22,6 +23,7 @@ function addToCart(shopButton) {
         emptyBag.classList.remove("hide");
         fullBag.classList.add("hide");
     }
+
 
     console.log(cartItems);
 }

@@ -238,7 +238,6 @@ body {
     position: relative;
     font-weight: bold;
     transition: all 500ms ease-in-out;
-
 }
 
 .social button img {
@@ -265,18 +264,14 @@ body {
 
 .social button:after {
     content: '';
-
     transition: inherit;
-
     width: 7.2rem;
     height: 7.2rem;
     border-radius: 50%;
     background: var(--coral);
-
     position: absolute;
     left: -0.95rem;
     top: -0.80rem;
-
     opacity: 0.3;
     z-index: -1;
   }

@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="/">
 
-        <title>Natu | Linha Capilar</title>
+        <title>Natu | Kit Sólidos Oceane</title>
         <base href="/">
         <link rel="stylesheet" type="text/css" href="/public/styles/responsive.css">
         <link rel="stylesheet" type="text/css" href="/public/styles/main.css">
@@ -72,101 +72,91 @@
             </header>
 
             <main>
-                <div class="product-header">
-                    <h1>Linha Capilar</h1>
-                    <p>Shampoos, condicionadores e kits de sólidos</p>
-                </div>
                 <a class="home" href="/src/views/landing-page.html">
                     <img src="/public/assets/left-arrow.svg" alt="voltar">
                     <span> Voltar</span>
                 </a>
 
-                <div class="products">
-                    <li>
-                        <a href="/">
-                            <img src="/public/img/fresh-shampoo.svg" alt="barra de shampoo fresh">
-                            <h3 id="shampooFreshName">Shampoo Sólido Fresh</h3>
-                            <p id="shampooFreshPrice">R$30</p>
-                        </a>
-                        <button id="shampooFresh" class="base-button" onclick="addToCart(this)">
-                            Comprar
-                        </button>
-                    </li>
-
-                    <li>
-                        <a href="">
-                            <img src="/public/img/kit-solido.svg" alt="barra de shampoo e condicionador pitaya">
-                            <h3 id="kitPitayaName">Kit Sólidos Pitaya</h3> 
-                            <p id="kitPitayaPrice">R$55</p>
-                        </a>
-                        <button id="kitPitaya" class="base-button" onclick="addToCart(this)">
-                            Comprar
-                        </button>
-                    </li>
-
-                    <li>
-                        <a href="/src/views/product-details.html">
-                            <img src="/public/img/duobar.svg" alt="barra de shampoo e condicionador oceane">
-                            <h3 id="kitOceaneName">Kit Sólidos Oceane</h3> 
-                            <p id="kitOceanePrice">R$55</p>
-                        </a>
-                        <button id="kitOceane" class="base-button" onclick="addToCart(this)">
-                            Comprar
-                        </button>
-                    </li>
-
-                    <li>
-                        <a href="">
-                            <img src="/public/img/oliva.svg" alt="barra 2 em 1 oliva">
-                            <h3 id="barOlivaName">Barra Oliva (2x1)</h3> 
-                            <p id="barOlivaPrice">R$35</p>
-                        </a>
-                        <button id="barOliva" class="base-button" onclick="addToCart(this)">
-                            Comprar
-                        </button>
-                    </li>
-
-                    <li>
-                        <a href="">
-                            <img src="/public/img/berry.svg" alt="barra de shampoo berry">
-                            <h3 id="shampooBerryName">Shampoo Sólido Berry</h3> 
-                            <p id="shampooBerryPrice">R$30</p>
-                        </a>
-                        <button id="shampooBerry" class="base-button" onclick="addToCart(this)">
-                            Comprar
-                        </button>
-                    </li>
-
-                    <li>
-                        <a href="">
-                            <img src="/public/img/fresh.svg" alt="barra de condicionador fresh">
-                            <h3 id="conditionerFreshName">Condicionador Fresh</h3> 
-                            <p id="conditionerFreshPrice">R$40</p>
-                        </a>
-                        <button id="conditionerFresh" class="base-button" onclick="addToCart(this)">
-                            Comprar
-                        </button>
-                    </li>
-
-                    <li>
-                        <a href="">
-                            <img src="/public/img/rose.svg" alt="barra 2 em 1 rose">
-                            <h3 id="barRoseName">Barra Rose (2x1)</h3> 
-                            <p id="barRosePrice">R$30</p>
-                        </a>
-                        <button id="barRose" class="base-button" onclick="addToCart(this)" onmouseup="">
-                            Comprar
-                        </button>
-                    </li>
+                <div class="cart">
+                    <div class="cart-content">
+                        <div class="cart-header">
+                            <h1>CARRINHO</h1>
+                            <img src="/public/assets/x-mark-coral.svg" alt="fechar">
+                        </div>
+                        <div class="cart-details">
+                            <div class="cart-items">
+                                <img class="img-item" src="/public/img/duobar.svg" alt="kit de barras capilares Oceane">
+                                <h4 id="kitOceaneName">Kit Sólidos Oceane</h4>
+                                <p class="subtitle-cart">Shampoo e condicionador hidratante</p>
+                                <p id="kitOceanePrice" class="price-cart">R$ 55</p>
+                                <input type="number" name="" id="">
+                                <img class="remove-item" role="button" src="/public/assets/trash-bin.svg" alt="remover do carrinho">
+                            </div>
+                                
+                            <h1>Total: </h1>
+                        </div>
+                        <div class="checkout">
+                            <label for="cep">Frete</label>
+                            <input type="text" name="cep" id="zipCode" placeholder="Seu CEP aqui">
+                            <button class="base-button shipping">Calcular</button>
+                            <button type="submit" class="submit-cart">Finalizar compra</button>
+                        </div>
+                    </div>
                 </div>
 
-               
+                <div class="product-info">
+                    <img class="product-view" src="/public/img/duobar.svg" alt="kit de barras capilares sólidas Oceane">
+                    <div class="product-presentation">
+                        <h1 id="kitOceaneName">Kit Sólidos Oceane</h1>
+                        <p class="subtitle">Shampoo e condicionador hidratante</p>
+                        <p id="kitOceanePrice" class="price">R$ 55</p>
+                        <div class="shop">
+                            <button id="kitOceane" class="base-button" onclick="addToCart(this)">Comprar</button>
+                            <input type="number" name="quantidade" id="">
+                        </div>
+                    </div>
+                </div>
 
-                
+                <div class="details">
+                    <div class="tabs">
+                        <div id="componentTab">
+                            <button class="btn component active" id="component">O que tem nele?</button><button class="btn use-tips" id="useTips">Dicas de uso</button>
+                            
+                                <div id="componentContent" class="info ">
+                                    <p>Manteiga de Cupuaçu</p>
+                                    <li>Reestrutura, condiciona e nutre os fios</li> 
+                                    <li>Reduz o frizz</li>
+                                    <li>Modela os fios</li>
+                                    <br>
+                                    <p>Manteiga de Karite</p>
+                                    <li>Protege contra o ressecamento</li>
+                                    <li>Faz a selagem do fio, impedindo a perda de hidratação</li> 
+                                    <li>Controla o frizz</li>
+                                    <br>
+                                    <p>Argila azul e Aloe Vera</p>
+                                    <li>Fortalece os fios</li>
+                                    <li>Reduz a quebra</li>
+                                    <li>Contribui com a regeneração do couro cabeludo</li>
+                                </div>
 
-
-                
+                                <div id="useTipsContent" class="info hide">
+                                    <li>
+                                        Deixe sob uma base vazada ou esponja vegetal e na área <br>
+                                        com menos úmidade do box para o máximo de durabilidade.
+                                    </li>
+                                    <br>
+                                    <li>
+                                        Para render ainda mais, corte o produto em dois ou mais <br>
+                                        pedaços e guarde o que não for usar em local seco e arejado.
+                                    </li>
+                                </div>
+                        </div>
+                        
+                    </div>
+                </div>
+ 
             </main>
+
             <footer>
                 <div class="newsletter">
                     <span>

@@ -68,3 +68,123 @@
     width: 10rem;
     height: 2.5rem;
 }
+
+.product-info {
+    overflow: visible;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 8vh;
+    flex-wrap: wrap;
+}
+
+.product-view {
+    height: 25rem;
+    align-self: center;
+    -webkit-box-shadow: 0px 0px 10px -2px var(--blue); 
+    box-shadow: 0px 0px 10px -2px var(--blue);
+    border-radius: 1.5rem;
+    
+}
+
+.product-presentation {
+    align-self: center;
+}
+
+.product-presentation h1 {
+    color: var(--deep-blue);
+    margin-top: 5vh;
+    font-size: 3rem;
+}
+
+.subtitle {
+    margin-top: 2vh;
+    color: var(--coral-light);
+    font-size: 1.4rem;
+}
+
+.price {
+    color: var(--royal);
+    font-family: Ubuntu, sans-serif;
+    font-size: 3rem;
+    margin-top: 5vh;
+}
+
+.shop {
+    margin-top: 8vh;
+    display: flex;
+    align-items: flex-start;
+    gap: 6rem;
+    flex-wrap: wrap;
+
+}
+.shop button {
+    width: 12vw;
+    height: 8vh;
+}
+.shop button img {
+    height: 1.8rem;
+}
+
+.shop input {
+    width: 8vw;
+    background-color: var(--snow);
+    border: solid 2px var(--coral-light);
+    border-radius: 1.3rem;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50vw;
+    padding-top: 10vh;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    width: 40vw;
+}
+
+.tabs button{
+    background: var(--coral-light) ;
+    border: solid 0.5px var(--snow);
+    width: 18vw;
+    height: 6vh;
+    font-family: Ubuntu, sans-serif;
+    font-size: 1.2rem;
+    color: var(--snow);
+}
+
+.tabs button:hover {
+    background: var(--coral-light);
+}
+
+.active {
+    background: var(--coral) !important;
+}
+
+.component {
+    border-radius: 1rem 0 0 0;
+}
+
+.use-tips {
+    border-radius: 0 1rem 0 0;
+}
+
+.info {
+    
+    margin-top: 5vh;
+    color: var(--deep-blue);
+    line-height: 1.2rem;
+}
+
+ p {
+    font-weight: 800;
+    font-size: 1rem;
+    padding-bottom: 1vh;
+}
+
+
+
+
