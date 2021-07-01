@@ -3,7 +3,7 @@
   Bem vind@ à Natu!
 </h3>
   Uma plataforma de e-commerce de produtos sólidos naturais que visa reduzir o uso de plástico na cosmética. <br>
-  Fictícia? Sim... Mas ainda bem que o publico alvo do projeto é super real 😊
+  Fictícia? Sim... Mas ainda bem que o público alvo do projeto é super real 😊
 <h4> Layout:</h4>
 
   - Orgulhosamente apresento meu primeiríssimo Layout autoral! 🎉 <br>
