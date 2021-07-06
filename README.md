@@ -1,5 +1,5 @@
 <h3>
-  <img height="80px" width="80px" alt="Capa Natu" title="Natu" src="https://github.com/glunascime/natu/blob/main/logo.svg">
+  <img height="80px" width="80px" alt="Capa Natu" title="Natu" src="https://github.com/glunascime/natu/blob/main/public/assets/logo.svg">
   Bem vind@ à Natu!
 </h3>
   Uma plataforma de e-commerce de produtos sólidos naturais que visa reduzir o uso de plástico na cosmética. <br>
