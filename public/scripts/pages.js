@@ -33,4 +33,8 @@ window.onload = function() {
         componentBtn.classList.remove("active");
         component.classList.add("hide");
     });
+
+    cartOnLoad();
+
 }
+

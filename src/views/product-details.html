@@ -49,7 +49,7 @@
                         <div class="general-user-area">
                             <div class="added">
                             <span id="itemCounter"></span>
-                            <img id="fullBag" src="/public/assets/shopping-bag.svg" class="hide" alt="">
+                            <img id="fullBag" src="/public/assets/shopping-bag.svg" class=" hide" alt="">
                             </div> 
                             <img 
                             src="/public/assets/bag.svg" 
@@ -77,11 +77,11 @@
                     <span> Voltar</span>
                 </a>
 
-                <div class="cart">
-                    <div class="cart-content">
+                <div class="cart hide" id="cart">
+                    <div class="cart-content ">
                         <div class="cart-header">
                             <h1>CARRINHO</h1>
-                            <img src="/public/assets/x-mark-coral.svg" alt="fechar">
+                            <img role="button" id="exitCart" src="/public/assets/x-mark-coral.svg" alt="fechar">
                         </div>
                         <div class="cart-details">
                             <div class="cart-items">
@@ -111,7 +111,7 @@
                         <p class="subtitle">Shampoo e condicionador hidratante</p>
                         <p id="kitOceanePrice" class="price">R$ 55</p>
                         <div class="shop">
-                            <button id="kitOceane" class="base-button" onclick="addToCart(this)">Comprar</button>
+                            <button id="kitOceane" class="base-button shop-button" onclick="addToCart(this)">Comprar</button>
                             <input type="number" name="quantidade" id="">
                         </div>
                     </div>

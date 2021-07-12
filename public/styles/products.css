@@ -130,7 +130,7 @@
     width: 8vw;
     background-color: var(--snow);
     border: solid 2px var(--coral-light);
-    border-radius: 1.3rem;
+    border-radius: 2rem;
 }
 
 .details {
