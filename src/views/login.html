@@ -67,9 +67,35 @@
 
             <main>
                 <a class="home" href="/src/views/landing-page.html">
-                    <img src="/public/assets/left-arrow.svg" alt="">
-                    <span> Voltar</span>
+                    <img src="/public/assets/left-arrow.svg" alt="voltar">
                 </a>
+                
+                <div class="cart hide" id="cart">
+                    <div class="cart-content ">
+                        <div class="cart-header">
+                            <h1>CARRINHO</h1>
+                            <img role="button" id="exitCart" src="/public/assets/x-mark-coral.svg" alt="fechar">
+                        </div>
+                        <div class="cart-details">
+                            <div class="cart-items">
+                                <img class="img-item" src="/public/img/duobar.svg" alt="kit de barras capilares Oceane">
+                                <h4 id="kitOceaneName">Kit Sólidos Oceane</h4>
+                                <p class="subtitle-cart">Shampoo e condicionador hidratante</p>
+                                <p id="kitOceanePrice" class="price-cart">R$ 55</p>
+                                <input type="number" name="" id="">
+                                <img class="remove-item" role="button" src="/public/assets/trash-bin.svg" alt="remover do carrinho">
+                            </div>
+                                
+                            <h1 id="totalCart">Total: </h1>
+                        </div>
+                        <div class="checkout">
+                            <label for="cep">Frete</label>
+                            <input type="text" name="cep" id="zipCode" placeholder="Seu CEP aqui">
+                            <button class="base-button shipping">Calcular</button>
+                            <button type="submit" class="base-button submit-cart">Finalizar compra</button>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="input-header">
                     <h1>
@@ -150,6 +176,7 @@
             
         </div>
     
+        <script src="/"></script>
         <script src="/public/scripts/menu.js"></script>
         <script src="/public/scripts/pages.js"></script>
         </div>

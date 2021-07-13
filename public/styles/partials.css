@@ -288,14 +288,8 @@
 }
 
 .home img {
-  height: 3vh;
+  height: 5vh;
 }
-
-.home span {
-  padding-top: 0.2rem;
-}
-
-
 
 footer {
   background: linear-gradient(180deg, var(--snow) 0%, var(--coral-light) 100%);

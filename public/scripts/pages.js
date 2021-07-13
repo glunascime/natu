@@ -12,28 +12,32 @@ loginButton.addEventListener("click", () => {
 
 
 window.onload = function() {
-    let componentBtn = document.getElementById('component');
-    let useTipsBtn = document.getElementById('useTips');
-    let component = document.getElementById('componentContent');
-    let useTips = document.getElementById('useTipsContent');
-    
+    try {
+            let componentBtn = document.getElementById('component');
+            let useTipsBtn = document.getElementById('useTips');
+            let component = document.getElementById('componentContent');
+            let useTips = document.getElementById('useTipsContent');
+            
 
-    componentBtn.addEventListener("click", () => {
-        componentBtn.classList.add("active");
-        component.classList.remove("hide");
+            componentBtn.addEventListener("click", () => {
+                componentBtn.classList.add("active");
+                component.classList.remove("hide");
 
-        useTipsBtn.classList.remove("active");
-        useTips.classList.add("hide");
-    });
+                useTipsBtn.classList.remove("active");
+                useTips.classList.add("hide");
+            });
 
-    useTipsBtn.addEventListener("click", () => {
-        useTipsBtn.classList.add("active");
-        useTips.classList.remove("hide");
+            useTipsBtn.addEventListener("click", () => {
+                useTipsBtn.classList.add("active");
+                useTips.classList.remove("hide");
 
-        componentBtn.classList.remove("active");
-        component.classList.add("hide");
-    });
+                componentBtn.classList.remove("active");
+                component.classList.add("hide");
+            });
 
+    } catch (error) {
+        
+    }
     cartOnLoad();
 
 }
