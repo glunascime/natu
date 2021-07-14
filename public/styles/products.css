@@ -126,11 +126,39 @@
     height: 1.8rem;
 }
 
-.shop input {
-    width: 8vw;
-    background-color: var(--snow);
-    border: solid 2px var(--coral-light);
+.amount {
+    display: flex;
+    border: 0.2px solid var(--coral);
     border-radius: 2rem;
+    justify-content: center;
+    width: 8vw;
+}
+
+.amount input {
+    width:  6vw;
+    height: 8vh;
+    margin-right: -1.5rem;
+    margin-left: -1.5rem;
+    background-color: var(--snow);
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--blue);
+}
+
+.amount button {
+    border: none;
+    background: none;
+    font-size: 1.5rem;
+    width: 1.5rem;
+    color: var(--blue);
+}
+
+.amount button:hover {
+    color: var(--coral-light);
+  }
+
+.subtract {
+    z-index: 2;
 }
 
 .details {

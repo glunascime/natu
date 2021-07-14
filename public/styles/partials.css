@@ -82,13 +82,42 @@
   padding-bottom: 5vh;
 }
 
+.amount-item {
+  display: flex;
+  border: 0.2px solid var(--coral);
+  border-radius: 2rem;
+  justify-content: center;
+  width: 6vw;
+}
+
+.amount-item input {
+  width:  6vw;
+  height: 8vh;
+  margin-right: -1.8rem;
+  margin-left: -1.8rem;
+  background-color: var(--snow);
+  text-align: center;
+  font-size: 1.6rem;
+  color: var(--blue);
+}
+
+.amount-item button {
+  border: none;
+  background: none;
+  font-size: 1.5rem;
+  width: 1.5rem;
+  color: var(--blue);
+}
+
+.amount-item button:hover {
+  color: var(--coral-light);
+}
+
 .cart-items input {
   grid-area: amountItem;
   width: 5.7rem;
   height: 3rem;
-
   background: none;
-  border: var(--coral) solid 0.1px;
 }
 
 .remove-item {

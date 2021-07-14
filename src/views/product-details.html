@@ -88,7 +88,11 @@
                                 <h4 id="kitOceaneName">Kit Sólidos Oceane</h4>
                                 <p class="subtitle-cart">Shampoo e condicionador hidratante</p>
                                 <p id="kitOceanePrice" class="price-cart">R$ 55</p>
-                                <input type="number" name="" id="">
+                                <div class="amount-item">
+                                    <button class="subtract" onclick="dec('amount')">-</button>
+                                    <input type="text" name="amount" readonly value="1" id="">
+                                    <button class="sum" onclick="inc('amount')">+</button>
+                                </div>
                                 <img class="remove-item" role="button" src="/public/assets/trash-bin.svg" alt="remover do carrinho">
                             </div>
                                 
@@ -111,7 +115,12 @@
                         <p id="kitOceanePrice" class="price">R$ 55</p>
                         <div class="shop">
                             <button id="kitOceane" class="base-button shop-button" onclick="addToCart(this)">Comprar</button>
-                            <input type="number" name="quantidade" id="">
+                            <div class="amount">
+                                <button class="subtract" onclick="dec('amount')">-</button>
+                                <input type="text" name="amount" readonly value="1" id="">
+                                <button class="sum" onclick="inc('amount')">+</button>
+                            </div>
+
                         </div>
                     </div>
                 </div>
