@@ -97,7 +97,7 @@
   margin-left: -1.8rem;
   background-color: var(--snow);
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: var(--blue);
 }
 
@@ -147,6 +147,18 @@
   margin-bottom: 1rem;
 }
 
+.base-button.keep-shopping {
+  width: 22rem;
+  font-size: 1.4rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.base-button.keep-shopping:hover {
+  background: var(--royal-light);
+  color: var(--coral);
+}
+
 .checkout {
   display: grid;
   grid-template-areas: 
@@ -186,6 +198,10 @@
   font-size: 1.3rem;
   margin-top: 4vh;
   margin-right: 9rem;
+}
+
+.base-button.shipping:hover {
+  background: var(--royal-light);
 }
 
 .base-button.submit-cart {

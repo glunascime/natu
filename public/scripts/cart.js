@@ -28,6 +28,30 @@ function cartOnLoad() {
     });
 }
 
+function inc(amount) {
+    let productAmount = document.getElementById('amountInfo');
+    productAmount.value = parseInt(productAmount.value) + 1;
+  }
+  
+  function dec(amount) {
+    let productAmount = document.getElementById('amountInfo');
+      if (parseInt(productAmount.value) > 1) {
+        productAmount.value = parseInt(productAmount.value) - 1;
+    }
+  }
+
+
+function inc(cartAmount) {
+    let productCartAmount = document.getElementById('amountItem');
+    productCartAmount.value = parseInt(productCartAmount.value) + 1;
+  }
+  
+  function dec(cartAmount) {
+    let productCartAmount = document.getElementById('amountItem');
+      if (parseInt(productCartAmount.value) > 1) {
+        productCartAmount.value = parseInt(productCartAmount.value) - 1;
+    }
+  }
 
 
 function addToCart(shopButton) {

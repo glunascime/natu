@@ -89,14 +89,15 @@
                                 <p class="subtitle-cart">Shampoo e condicionador hidratante</p>
                                 <p id="kitOceanePrice" class="price-cart">R$ 55</p>
                                 <div class="amount-item">
-                                    <button class="subtract" onclick="dec('amount')">-</button>
-                                    <input type="text" name="amount" readonly value="1" id="">
-                                    <button class="sum" onclick="inc('amount')">+</button>
+                                    <button class="subtract" onclick="dec('cartAmount')">-</button>
+                                    <input type="text" name="amount" readonly value="1" id="amountItem">
+                                    <button class="sum" onclick="inc('cartAmount')">+</button>
                                 </div>
                                 <img class="remove-item" role="button" src="/public/assets/trash-bin.svg" alt="remover do carrinho">
                             </div>
                                 
                             <h1 id="totalCart">Total: </h1>
+                            <button class="base-button keep-shopping">Continuar comprando</button>
                         </div>
                         <div class="checkout">
                             <label for="cep">Frete</label>
@@ -116,9 +117,9 @@
                         <div class="shop">
                             <button id="kitOceane" class="base-button shop-button" onclick="addToCart(this)">Comprar</button>
                             <div class="amount">
-                                <button class="subtract" onclick="dec('amount')">-</button>
-                                <input type="text" name="amount" readonly value="1" id="">
-                                <button class="sum" onclick="inc('amount')">+</button>
+                                <button class="subtract" id="sub" onclick="dec('amount')">-</button>
+                                <input type="text" name="amount" readonly value="1" id="amountInfo">
+                                <button class="sum" id="sum" onclick="inc('amount')">+</button>
                             </div>
 
                         </div>
